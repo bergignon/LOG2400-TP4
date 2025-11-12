@@ -1,4 +1,6 @@
-#include "affichage.h"
+#include "../header/Surface.h"
+#include "../header/Point.h"
+#include "../header/NuageDePoints.h"
 #include <iostream>
 #include <sstream>
 #include <string>
@@ -18,10 +20,7 @@ int main(int argc, char* argv[]) {
         getline(cin, args);
     }
     
-    // Voici des fonctions utiles pour réaliser le TP. 
-    // TODO: Il faudrait les placer dans des classes appropriées.
-    vector<Point> points = creerPoints(args);
-    imprimerGrille(points);
+    NuageDePoints nuage = NuageDePoints(args);
     
     // Ce sont différentes textures possibles. Seules les 2 premières sont utilisées dans les scénarios du TP.
     vector<char> texturesNuages = {'o', '#', '$'};
