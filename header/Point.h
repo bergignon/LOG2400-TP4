@@ -8,7 +8,7 @@ struct Point {
 
 class PointDecorator {
 public:
-    PointDecorator(Point& p, char texture = ' ', char previousTexture = ' ');
+    PointDecorator(Point& p, char texture = '#', char previousTexture = 'o');
     void appliquerTexture();
     void retirerTexture();
     void supprimerTexture();

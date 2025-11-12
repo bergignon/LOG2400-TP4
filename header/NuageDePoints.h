@@ -8,7 +8,6 @@
 class NuageDePoints {
 public:
     NuageDePoints(const std::string& pointsString, char texture='o');
-    void ajouterPoint(const Point& p);
     void supprimerPoint(int id);
     void deplacerPoint(int id, int x, int y);
     std::vector<Point> getPoints() const;

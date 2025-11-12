@@ -173,7 +173,7 @@ public:
                 if (c == ' ')
                     std::cout << ' ';
                 else
-                    std::cout << (c % 10 + '0'); // affiche un ID symbolique
+                    std::cout << (c % 10 + '0'); 
             }
             std::cout << "\n";
         }
